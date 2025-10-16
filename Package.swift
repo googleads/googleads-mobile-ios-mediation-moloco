@@ -22,22 +22,28 @@ let package = Package(
   products: [
     .library(
       name: "MolocoAdapterTarget",
-      targets: ["MolocoAdapterTarget"]
+      targets: ["MolocoAdapterTarget", "MolocoSDK"]
     )
   ],
   targets: [
     .target(
       name: "MolocoAdapterTarget",
       dependencies: [
-        .target(name: "Adapter"),
+        .target(name: "MolocoAdapter"),
       ],
       path: "MolocoAdapterTarget"
     ),
     .binaryTarget(
-      name: "Adapter",
+      name: "MolocoAdapter",
       url:
-        "https://dl.google.com/googleadmobadssdk/mediation/ios/Moloco/MolocoAdapter-3.12.0.0.zip",
-      checksum: ""
+        "https://dl.google.com/googleadmobadssdk/mediation/ios/Moloco/MolocoAdapter-3.13.0.0.zip",
+      checksum: "db3b18e76318a433f40426928b43c78c258b99e3ec93578f2eb7b0da4fc0b513"
+    ),
+    .binaryTarget(
+      name: "MolocoSDK",
+      url:
+        "https://moloco-ios-build.s3.amazonaws.com/moloco-sdk/MolocoSDK-3.13.0.zip",
+      checksum: "6689e018e1b7ed51a4832f53bb35ef7d04a5d1d69768646b8cba04e0a3f514a1"
     ),
   ]
 )
