@@ -43,13 +43,13 @@ let package = Package(
     .binaryTarget(
       name: "MolocoAdapter",
       url:
-        "https://dl.google.com/googleadmobadssdk/mediation/ios/Moloco/MolocoAdapter-4.4.1.0.zip",
+        "https://dl.google.com/googleadmobadssdk/mediation/ios/Moloco/MolocoAdapter-4.5.0.0.zip",
       checksum: "9cd511bf4ed7b94b735dcf73d90e6df204fc4a4e791ea177cdea2cbdce6f785c"
     ),
     .binaryTarget(
       name: "MolocoSDK",
       url:
-        "https://moloco-ios-build.s3.amazonaws.com/moloco-sdk/MolocoSDK-4.4.1.zip",
+        "https://moloco-ios-build.s3.amazonaws.com/moloco-sdk/MolocoSDK-4.5.0.zip",
       checksum: "78c8b918ba3f52c5953267d70c0588515304c34735a2a44265878cb7007c0578"
     ),
   ]
