@@ -1,4 +1,4 @@
-// swift-tools-version:5.3
+// swift-tools-version:5.6
 
 // Copyright 2025 Google LLC.
 //
@@ -22,10 +22,14 @@ let package = Package(
   products: [
     .library(
       name: "MolocoAdapterTarget",
-      targets: ["MolocoAdapterTarget", "MolocoSDK"]
+      targets: ["MolocoAdapterTarget"]
     )
   ],
   dependencies: [
+    .package(
+      url: "https://github.com/moloco/moloco-sdk-ios-spm.git",
+      exact: "4.5.0"
+    ),
     .package(
       url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git",
       from: "13.0.0"
@@ -36,6 +40,7 @@ let package = Package(
       name: "MolocoAdapterTarget",
       dependencies: [
         .target(name: "MolocoAdapter"),
+        .product(name: "MolocoSDK", package: "moloco-sdk-ios-spm"),
         .product(name: "GoogleMobileAds", package: "swift-package-manager-google-mobile-ads"),
       ],
       path: "MolocoAdapterTarget"
@@ -44,13 +49,7 @@ let package = Package(
       name: "MolocoAdapter",
       url:
         "https://dl.google.com/googleadmobadssdk/mediation/ios/Moloco/MolocoAdapter-4.5.0.0.zip",
-      checksum: "9cd511bf4ed7b94b735dcf73d90e6df204fc4a4e791ea177cdea2cbdce6f785c"
-    ),
-    .binaryTarget(
-      name: "MolocoSDK",
-      url:
-        "https://moloco-ios-build.s3.amazonaws.com/moloco-sdk/MolocoSDK-4.5.0.zip",
-      checksum: "78c8b918ba3f52c5953267d70c0588515304c34735a2a44265878cb7007c0578"
+      checksum: "e5adc23af1ae36105d2f892f9bbfb09c09c65daec87e3b5b7813e1218a10a4b8"
     ),
   ]
 )
