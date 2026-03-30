@@ -28,7 +28,7 @@ let package = Package(
   dependencies: [
     .package(
       url: "https://github.com/moloco/moloco-sdk-ios-spm.git",
-      exact: "4.5.0"
+      exact: "4.5.1"
     ),
     .package(
       url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git",
@@ -48,7 +48,7 @@ let package = Package(
     .binaryTarget(
       name: "MolocoAdapter",
       url:
-        "https://dl.google.com/googleadmobadssdk/mediation/ios/Moloco/MolocoAdapter-4.5.0.0.zip",
+        "https://dl.google.com/googleadmobadssdk/mediation/ios/Moloco/MolocoAdapter-4.5.1.0.zip",
       checksum: "e5adc23af1ae36105d2f892f9bbfb09c09c65daec87e3b5b7813e1218a10a4b8"
     ),
   ]
