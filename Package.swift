@@ -48,8 +48,8 @@ let package = Package(
     .binaryTarget(
       name: "MolocoAdapter",
       url:
-        "https://dl.google.com/googleadmobadssdk/mediation/ios/Moloco/MolocoAdapter-4.6.1.1.zip",
-      checksum: "c5aae942c3dd150a23d0506676ed619e6a31aa5247d6574462e0217a5181927a"
+        "https://dl.google.com/googleadmobadssdk/mediation/ios/Moloco/MolocoAdapter-4.6.1.0.zip",
+      checksum: "375489a3bd035b1bfcde77d90326a96ed8b7a8226a433114bc71bd4744157e3d"
     ),
   ]
 )
