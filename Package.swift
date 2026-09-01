@@ -49,7 +49,7 @@ let package = Package(
       name: "MolocoAdapter",
       url:
         "https://dl.google.com/googleadmobadssdk/mediation/ios/Moloco/MolocoAdapter-4.10.0.0.zip",
-      checksum: "84bb0ea3c3527b59e8ce2e505e593fb73a8f761ac864d074883602f61965c905"
+      checksum: "6a1f7927467123ff3dbaf72bf799d56f4d98eff62916d1b8e79e39593a0154b7"
     ),
   ]
 )
